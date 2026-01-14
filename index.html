@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the moon phase | 月相官方乐队网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Silkscreen&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-bg: #1A1A1C; /* Lighter Graphite / Warm-Cool Neutral */
+        --color-gold: #D4AF37; /* Pale Gold */
+        --color-orange: #FF4500; /* Alert Orange */
+        --color-text: #E5E5E5;
+      }
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: 'Inter', sans-serif;
+        font-weight: 200; /* Ultra Light default */
+        overflow-x: hidden;
+      }
+      
+      /* Tech/Data Font */
+      .font-pixel {
+        font-family: 'Silkscreen', cursive;
+      }
+      
+      /* Postmodern Font (replaces serif) */
+      .font-postmodern {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      
+      /* Song Font (宋体) */
+      .font-song {
+        font-family: 'SimSun', '宋体', 'STSong', serif;
+      }
+
+      /* Hide cursor on non-touch devices to use custom cursor */
+      @media (hover: hover) and (pointer: fine) {
+        body {
+          cursor: none;
+        }
+        a, button, [role="button"], input, textarea {
+          cursor: none;
+        }
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 2px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--color-bg); 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-gold); 
+      }
+
+      /* Animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      .animate-float {
+        animation: float 8s ease-in-out infinite;
+      }
+      
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 120s linear infinite;
+      }
+      .animate-spin-reverse {
+        animation: spin-slow 150s linear infinite reverse;
+      }
+
+      @keyframes pulse-glow {
+        0%, 100% { filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.2)); }
+        50% { filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5)); }
+      }
+      .animate-pulse-glow {
+        animation: pulse-glow 4s ease-in-out infinite;
+      }
+
+      /* Invert Utility */
+      .hover-invert {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .hover-invert:hover {
+        background-color: var(--color-gold);
+        color: #000;
+        box-shadow: 0 0 20px var(--color-gold);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@2.15.0?external=react,react-dom",
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.469.0?external=react",
+    "framer-motion": "https://esm.sh/framer-motion@11.15.0?external=react,react-dom",
+    "three": "https://esm.sh/three@0.171.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.17.10?external=react,react-dom,three",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.120.4?external=react,react-dom,three,@react-three/fiber",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
