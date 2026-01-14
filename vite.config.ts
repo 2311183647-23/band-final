@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({ mode }) => {
     return {
+      base: '/band-final/',
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -21,7 +22,7 @@ export default defineConfig(({ mode }) => {
       },
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, '.'),
+          '@': path.resolve(__dirname, './src'),
         }
       }
     };
