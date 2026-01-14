@@ -7,7 +7,7 @@
 2. chtGPT辅助prompt撰写
 3. cusor pro完成后续调整和内容封装
 
-## 预览链接：https://github.com/2311183647-23/band-final.git
+## 预览链接：[https://github.com/2311183647-23/band-final.git](https://2311183647-23.github.io/band-final/)
 
 ## Run and deploy your AI Studio app
 
