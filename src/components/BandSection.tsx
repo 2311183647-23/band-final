@@ -6,9 +6,9 @@ import Marquee from './Marquee';
 import { ScrollSection, Reveal } from './ScrollReveal';
 
 const IMAGES = [
-  "/assets/band3.jpg",
-  "/assets/band2.jpg",
-  "/assets/band1.jpg"
+  `${import.meta.env.BASE_URL}assets/band3.jpg`,
+  `${import.meta.env.BASE_URL}assets/band2.jpg`,
+  `${import.meta.env.BASE_URL}assets/band1.jpg`
 ];
 
 export const BandSection: React.FC = () => {
